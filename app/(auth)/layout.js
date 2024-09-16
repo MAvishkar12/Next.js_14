@@ -19,8 +19,9 @@ const navbar=[
 
         navbar.map((val)=>{
             const isActive=pathname.startsWith(val.href)
-            return <h3> <Link href={val.href} key={val.name} className={isActive ?"font-bold text-red-700":"text-blue-800"} >{val.name}  </Link></h3>
-            
+            return (
+            <h3> <Link href={val.href} key={val.name} className={isActive ?"font-bold text-red-700":"text-blue-800"} >{val.name}  </Link></h3>
+            ) 
         })
     }
      {children}
